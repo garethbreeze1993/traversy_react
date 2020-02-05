@@ -39,7 +39,9 @@ class TodoItem extends Component {
 
 // PropTypes
 TodoItem.propTypes = {
-    todo: PropTypes.object.isRequired
+    todo: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired
 }
 
 // this.props.blabla.bind means we can send the id up the chain so we can use the id clicked in the relevent function in app.js
